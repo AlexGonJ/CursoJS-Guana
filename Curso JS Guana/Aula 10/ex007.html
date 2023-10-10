@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+      
+   h1{
+            font: normal 48pt;
+         
+        font-family: 'Times New Roman', Times, serif;
+                      background-color: rgb(228, 226, 224);
+          margin-left: 100px;
+          margin-right: 100px;
+            text-align: center;
+        align-items: center;
+
+        }
+       body {
+            font: normal 28pt Arial;
+            background: rgb(33, 10, 59);
+           
+        
+        }
+        input{
+            font: normal 18pt Arial white;
+            width: 200px;
+            background-color: rgb(230, 224, 233);
+            margin-top: 200px;
+            margin-left: 40px;
+            
+           
+        
+        }
+        div#res {
+            margin-top: 20px;
+            background-color: rgb(142, 192, 101);
+            width: 700px;
+            margin-top: 80px;
+            align-items: center;
+            
+        }
+        s{
+        font: normal 19pt;
+        }
+    </style>
+</head>
+<body style="color:white">
+    
+    <align-items:center>
+        <h1 style="color:purple">Somando valores</h1>
+    <input type="number" name="txtn1" id="txtn1" style="color:brown; font-size: 30pt;" > +
+    <input type="number" name="txtn2" id="txtn2" style="color:brown; font-size: 30pt;">
+    <input type="button" value="Somar" onclick="somar()" style="border-radius: 10px; background:rgb(208, 241, 88); width:400px; color:rgb(6, 3, 36); font-size: 26pt;">
+    <div id="res">Resultado:</div>
+   </align-items:center>
+    <script>
+
+        function somar() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.querySelector('input#txtn2')
+            var res= window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+             var n2 = Number(tn2.value)
+             var s = n1 + n2
+             res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
+        }
+    </script>
+</body>
+</html>
